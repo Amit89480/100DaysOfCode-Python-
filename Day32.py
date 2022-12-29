@@ -63,3 +63,13 @@ set2={6,7,8,4,5,67,89,34}
 #     print("No")
 
 
+
+# Checking the frozen set
+
+l={5,6,7,8,3}
+
+s=frozenset(l)
+
+# s[0]="netwporking"-->will generate an error
+print(s)
+
