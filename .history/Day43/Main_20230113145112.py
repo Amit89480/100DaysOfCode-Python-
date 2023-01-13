@@ -1,1 +1,3 @@
+import Amit
+
 Amit.greetings()
