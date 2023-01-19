@@ -2,18 +2,23 @@
 
 
 # Here we are using readLine to readLine including new lines
-f= open('myfile','r')
+f = open('myfile', 'r')
 while True:
     line = f.readline()
     if not line:
         break
     print(line)
 
-
 # Here we will be using Writeline
 
-f=open('myfile','w')
-lines=['line1\n','line2\n','line3\n']
+f = open('myfile', 'w')
+lines = ['line1\n', 'line2\n', 'line3\n']
 
 f.writelines(lines)
+f.close()
+
+f = open('myfile', 'w')
+lines = ['Amit', 'Ashis', 'Misti']
+for line in lines:
+    f.writelines(line + '\n')
 f.close()
